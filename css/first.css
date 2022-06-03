@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.exit__button__container > a, .des__box > a, .des-author-name {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.des-last__online {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.box {
+  padding: 16px 25px;
+}
+
+.exit__button__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.exit__button__container > a {
+  color: #828282;
+  margin: 0 0 20px;
+}
+
+.paragraph__date {
+  margin: 10px 0;
+}
+
+.interesting__box {
+  border: 3px solid #1C1C1C;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.interesting__title {
+  color: #fff;
+}
+
+.interesting__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.interest {
+  margin: 25px 0;
+}
+
+.interst-slice {
+  color: #F3EBA2;
+}
+
+#commentary {
+  width: 100%;
+  margin: 20px 0 0;
+  border: none;
+  border-bottom: 1px solid #3F3F3F;
+  background-color: transparent;
+}
+
+.des__box > a {
+  color: #107EFF;
+}
+
+.des__author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.des-author-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url("../image/a2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.des__box:nth-child(3) {
+  margin-left: 20%;
+  margin-bottom: 1.5em;
+}
+
+.des__author__right {
+  margin-left: 20px;
+}
+
+.des-author-name {
+  color: #fff;
+}
+
+.des-last__online {
+  color: #828282;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 1280px) {
+  .left-interst {
+    margin-right: 10px;
+    flex-direction: column;
+  }
+
+  .interst-slice {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .interesting__container {
+    flex-direction: column;
+  }
+
+  .exit__button__container > a:nth-child(2) {
+    display: none;
+  }
+
+  .comment > .button__primary {
+    font-size: 14px;
+    padding: 3px 10px;
+  }
+}
+@media only screen and (max-width: 480px) and (max-width: 1400px) {
+  .comment > .button__primary {
+    border-radius: 10px;
+  }
+}
+
+/*# sourceMappingURL=first.css.map */

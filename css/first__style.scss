@@ -1,0 +1,125 @@
+@use 'flexbox' as f;
+@use 'colors' as *;
+@use 'font-family' as *;
+
+.box {
+    padding:16px 25px;
+}
+
+.exit__button__container {
+    @include f.fly(space-between);
+    >a{
+        @extend %font16;
+        color: $grayColor;
+        margin:0 0 20px;
+    }
+}
+
+.paragraph__date {
+    margin:10px 0;
+}
+
+.interesting__box {
+    border: 3px solid $lineColor;
+    border-left-color:transparent;
+    border-right-color:transparent;
+}
+
+.interesting__title {
+    color: #fff;
+}
+
+.interesting__container {
+    @include f.fly(space-between);
+    margin:20px 0;
+}
+
+.interest {
+    margin:25px 0;
+}
+
+.interst-slice {
+    color: $yellowColor;
+}
+
+#commentary {
+    width:100%;
+    margin:20px 0 0;
+    border:none;
+    border-bottom: 1px solid #3F3F3F;
+    background-color: transparent;
+}
+
+.des__box {
+    >a{
+        @extend %font16;
+        color: #107EFF;
+    }
+}
+
+
+.des__author {
+    @include f.fly(flex-start);
+}
+
+.des-author-image {
+        width:50px;
+        height: 50px;
+        border-radius: 50%;
+        background-image:url('../image/a2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+.des__box:nth-child(3) {
+    margin-left: 20%;
+    margin-bottom: 1.5em;
+}
+
+.des__author__right {
+    margin-left:20px;
+}
+
+.des-author-name {
+    color:#fff;
+    @extend %font16;
+}
+
+.des-last__online {
+    @extend %font12;
+    color: $grayColor;
+    margin-top:5px;
+}
+@media screen and (max-width:1280px) {
+    .left-interst {
+        margin-right: 10px;
+        flex-direction: column;
+    }
+
+    .interst-slice {
+        font-size:16px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .interesting__container {
+        flex-direction: column;
+    }
+    .exit__button__container {
+        >a{
+            &:nth-child(2) { 
+                display: none;
+            }
+        }
+    }
+    .comment {
+        >.button__primary {
+            font-size:14px;
+            padding:3px 10px;
+            @media screen and (max-width:1400px) {
+                border-radius:10px;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,9 @@
+@mixin fly($jc) {
+    display: flex;
+    justify-content: $jc;
+    align-items: center;
+}
+
+@mixin col {
+    flex-direction: column;
+}
